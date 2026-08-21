@@ -9,7 +9,7 @@ import { HomePage } from '../pom/pages/HomePage';
     let homePage: HomePage
     
 
-    test.beforeEach('Before all', async ({page})=>{
+    test.beforeAll('Before all', async ({page})=>{
 
 
       //  page = page;
@@ -21,7 +21,7 @@ import { HomePage } from '../pom/pages/HomePage';
     })
 
 
-        test('Verify that Cart is opened when user clicks on top cart option', async ({page}) =>{
+        test.only('Verify that Cart is opened when user clicks on top cart option', async ({page}) =>{
 
             await test.step('Click on cart option', async ()=>{
 
