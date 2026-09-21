@@ -21,7 +21,7 @@ import { HomePage } from '../pom/pages/HomePage';
     })
 
 
-        test.only('Verify that Cart is opened when user clicks on top cart option', async ({page}) =>{
+        test('Verify that Cart is opened when user clicks on top cart option', async ({page}) =>{
 
             await test.step('Click on cart option', async ()=>{
 
@@ -38,3 +38,17 @@ import { HomePage } from '../pom/pages/HomePage';
 
         })
 
+        test('Verify that Search field accept value', async ()=>{
+        
+                await test.step('User enter value in the Search field', async()=>{
+        
+                    await topBar.enterValueInSearchBox("Delhi");
+        
+                })
+        
+                await test.step('Given value should be entered in the field', async ()=>{
+        
+                    await expect(topBar.getSearchBox()).toHaveValue("Delhi");
+                })
+            })
+        
