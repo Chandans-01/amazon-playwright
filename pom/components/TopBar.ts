@@ -18,14 +18,13 @@ export class TopBar {
 
     constructor(page: Page) {
 
-        this.searchBox = page.locator('#twotabsearchtextbox');
-        this.searchBarFindButton = page.getByRole('button', { name: 'Go' });
+        this.searchBox = page.getByRole('searchbox', { name: 'Search Amazon.in' });        this.searchBarFindButton = page.getByRole('button', { name: 'Go' });
         this.changeLanguage = page.locator('.icp-nav-link-inner');
         this.accountAndList = page.locator('Account & Lists');
         this.returnAndOrders = page.locator('Returns');
         this.cart = page.locator('#nav-cart-count-container');
         this.amazonInLogo = page.locator('#nav-logo-sprites');
-        this.updateLocation = page.locator('#nav-global-location-slot');
+        this.updateLocation = page.getByRole('button', {name: /Update location/ });
 
 
 
