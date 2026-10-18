@@ -11,12 +11,14 @@ export class HomePage {
 
 
 
+
     constructor(page: Page){
 
         this.seeTheWorldForLess = page.getByText("See the world for less");
         this.allMenu = page.locator('#nav-hamburger-menu');
     
         this.menuCustomerName = page.locator('#hmenu-customer-name').first();
+        
 
     }
 

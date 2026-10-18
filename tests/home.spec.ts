@@ -237,7 +237,7 @@ test("User Landed on the amazon homepage", async ({page})=>{
     
     })
 
-    test('Verify that user redirected on advertising page upon clickin on Advertise Your Products option', async ({page})=>{
+    test('Verify that user redirected on advertising page upon clicking on Advertise Your Products option', async ({page})=>{
 
         await test.step('User click on Advertise Your Product option', async ()=>{
 
@@ -250,6 +250,9 @@ test("User Landed on the amazon homepage", async ({page})=>{
         })
 
     })
+
+
+    
     
     test('Verify that user redirected to Amazon Pay page upon clicking Amazon Pay on Merchants', async ({page})=>{
 
@@ -264,6 +267,7 @@ test("User Landed on the amazon homepage", async ({page})=>{
     })
         
 
+ 
     
 
 
